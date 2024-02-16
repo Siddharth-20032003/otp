@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OTP Verification</title>
+    <link rel="stylesheet" type="text/css" href="otp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>OTP Verification</h1>
+      <p>We have sent a verification code to your email address.</p>
+      <form id="otp-form">
+        <input
+          type="text"
+          id="otp-input-1"
+          pattern="[0-9]*"
+          maxlength="1"
+          autofocus
+        />
+        <input type="text" id="otp-input-2" pattern="[0-9]*" maxlength="1" />
+        <input type="text" id="otp-input-3" pattern="[0-9]*" maxlength="1" />
+        <input type="text" id="otp-input-4" pattern="[0-9]*" maxlength="1" />
+        <button type="submit">Verify</button>
+      </form>
+      <p id="message"></p>
+    </div>
+    <script src="otp.js"></script>
+  </body>
+</html>
